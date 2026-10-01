@@ -1,0 +1,21 @@
+name = "SI Engine"
+
+[folders]
+path = [
+    "Controller",
+    "Plant",
+    "Plant/Calibrations",
+    "Plant/Calibrations/DLEngine",
+    "Plant/Calibrations/MappedEngine",
+    "Plant/FMUs",
+]
+
+[dependencies]
+"Vehicle Data" = {path = "../VehicleData"}
+
+[project]
+summary = "Project uses the Mapped SI Engine block to implement a mapped spark-ignition (SI) engine model with power, air mass flow, fuel flow, exhaust temperature, efficiency, and emission performance lookup tables. Provides a SI controller model for the engine."
+
+[simulink]
+cache-folder = "Work"
+codegen-folder = "Work"

@@ -1,0 +1,9 @@
+name = "Vehicle Data"
+
+[folders]
+path = [
+    "Dictionaries",
+]
+
+[dependencies]
+EngineData = {path = "../EngineData"}

@@ -1,0 +1,9 @@
+name = "Trailer"
+
+[folders]
+path = [
+    "Plant",
+]
+
+[dependencies]
+"Vehicle Data" = {path = "../VehicleData"}

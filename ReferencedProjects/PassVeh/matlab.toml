@@ -1,0 +1,14 @@
+name = "Passenger Vehicle"
+
+[folders]
+path = [
+    "Controller",
+    "Plant",
+]
+
+[dependencies]
+"Vehicle Data" = {path = "../VehicleData"}
+
+[simulink]
+cache-folder = "Work"
+codegen-folder = "Work"

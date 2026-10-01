@@ -1,0 +1,14 @@
+name = "Thermal"
+
+[folders]
+path = [
+    "Controller",
+    "Plant",
+    "Work",
+]
+
+[dependencies]
+"Vehicle Data" = {path = "../VehicleData"}
+
+[simulink]
+cache-folder = "Work"

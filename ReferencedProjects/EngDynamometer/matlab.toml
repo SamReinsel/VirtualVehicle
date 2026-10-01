@@ -1,0 +1,11 @@
+name = "EngDynamometer"
+
+[folders]
+path = [
+    "Dyno",
+    "Utilities",
+]
+
+[dependencies]
+"CI Engine" = {path = "../CI"}
+"SI Engine" = {path = "../SI"}

@@ -1,0 +1,6 @@
+name = "EngineData"
+
+[folders]
+path = [
+    "Dictionaries",
+]

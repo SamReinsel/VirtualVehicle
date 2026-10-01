@@ -1,0 +1,12 @@
+name = "CI Engine"
+
+[folders]
+path = [
+    "Controller",
+    "Plant",
+    "Plant/Calibrations",
+    "Plant/Calibrations/MappedEngine",
+]
+
+[dependencies]
+"Vehicle Data" = {path = "../VehicleData"}
