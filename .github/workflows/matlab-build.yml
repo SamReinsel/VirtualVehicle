@@ -1,29 +1,29 @@
 name: MATLAB Build Tool CI
 
 on:
-push:
-    branches: [ main ]
-pull_request:
-    branches: [ main ]
+  push:
+      branches: [ main ]
+  pull_request:
+      branches: [ main ]
 
 jobs:
-    matlab-build:
-        name: Run MATLAB Build
-        runs-on: ubuntu-latest
+  matlab-build:
+      name: Run MATLAB Build
+      runs-on: ubuntu-latest
+      
+      steps:
+        # Step 1: Check out the repository code
+        - name: Check out repository
+          uses: actions/checkout@v4
         
-        steps:
-            # Step 1: Check out the repository code
-            - name: Check out repository
-              uses: actions/checkout@v4
-            
-            # Step 2: Set up the desired version of MATLAB on the runner
-            - name: Set up MATLAB
-              uses: matlab-actions/setup-matlab@v2
-              with:
-              release: 'R2026b' # Specify your preferred version (R2022b or later)
-            
-            # Step 3: Run tasks defined in your buildfile.m
-            - name: Run MATLAB Build
-              uses: matlab-actions/run-build@v3
-              with:
-              tasks: test # Optional: Space-separated list of tasks to run
+        # Step 2: Set up the desired version of MATLAB on the runner
+        - name: Set up MATLAB
+          uses: matlab-actions/setup-matlab@v2
+          with:
+            release: 'R2026b' # Specify your preferred version (R2022b or later)
+        
+        # Step 3: Run tasks defined in your buildfile.m
+        - name: Run MATLAB Build
+          uses: matlab-actions/run-build@v3
+          with:
+            tasks: test # Optional: Space-separated list of tasks to run

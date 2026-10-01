@@ -26,10 +26,10 @@ helpsearch*/
 slprj/
 sccprj/
 codegen/
-
+Work/
+.buildtool/
 # Cache files
 *.slxc
 
 # Cloud based storage dotfile
 .MATLABDriveTag
-work/
