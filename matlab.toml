@@ -6,6 +6,7 @@ path = [
     "Scripts",
     "System",
     "System/testvehicle",
+    "Tests",
 ]
 
 [dependencies]
