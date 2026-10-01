@@ -1,0 +1,35 @@
+name = "VirtualVehicle"
+
+[folders]
+path = [
+    "Controller",
+    "Scripts",
+    "System",
+    "System/testvehicle",
+]
+
+[dependencies]
+"CI Engine" = {path = "ReferencedProjects/CI"}
+Driveline = {path = "ReferencedProjects/Driveline"}
+Electrical = {path = "ReferencedProjects/Electrical"}
+EngDynamometer = {path = "ReferencedProjects/EngDynamometer"}
+EngineData = {path = "ReferencedProjects/EngineData"}
+MotDynamometer = {path = "ReferencedProjects/MotDynamometer"}
+"Passenger Vehicle" = {path = "ReferencedProjects/PassVeh"}
+"SI Engine" = {path = "ReferencedProjects/SI"}
+Thermal = {path = "ReferencedProjects/Thermal"}
+Trailer = {path = "ReferencedProjects/Trailer"}
+"Vehicle Data" = {path = "ReferencedProjects/VehicleData"}
+
+[project]
+startup-files = [
+    "Scripts/StartVV.m",
+]
+shutdown-files = [
+    "Scripts/CloseVV.m",
+]
+
+[project.shortcuts]
+SimscapePlantModels = {path = "System/SimscapePlantModels.slx"}
+SimulinkPlantModels = {path = "System/SimulinkPlantModels.slx"}
+VirtualVehicleTemplate = {path = "System/VirtualVehicleTemplate.slx"}
